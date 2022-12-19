@@ -1,5 +1,6 @@
 import React from "react";
 import CurierStatus from "./CurierStatus/CurierStatus";
+import StatisticSection from "./StatisticSection/StatisticSection";
 
 const DefaultDashboard = () => {
   return (
@@ -28,6 +29,7 @@ const DefaultDashboard = () => {
         </div>
       </div>
       <CurierStatus />
+      <StatisticSection />
     </div>
   );
 };
