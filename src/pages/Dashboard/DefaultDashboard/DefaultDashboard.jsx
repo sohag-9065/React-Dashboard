@@ -1,4 +1,5 @@
 import React from "react";
+import CurierStatus from "./CurierStatus/CurierStatus";
 
 const DefaultDashboard = () => {
   return (
@@ -6,9 +7,9 @@ const DefaultDashboard = () => {
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold text-slate-800">Dashboard</h1>
 
-        <div>
+        <div className="flex items-center space-x-3">
           <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn m-1">
+            <label tabIndex={0} className="btn bg-white text-black m-1">
               î¦Œ Last 30 Days î§“
             </label>
             <ul
@@ -23,8 +24,10 @@ const DefaultDashboard = () => {
               </li>
             </ul>
           </div>
+          <button className="btn btn-active btn-primary">Reports</button>
         </div>
       </div>
+      <CurierStatus />
     </div>
   );
 };
